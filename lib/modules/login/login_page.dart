@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_race/modules/login/widgets/button/button.dart';
+import 'package:flutter_race/modules/login/widgets/button/button_type_enum.dart';
 import 'package:flutter_race/modules/login/widgets/input_text_widget/input_text.dart';
 import 'package:flutter_race/shared/theme/app_theme.dart';
 
@@ -29,6 +31,37 @@ class LoginPage extends StatelessWidget {
               const InputText(
                 label: 'Senha',
                 hint: 'Digite sua senha',
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              Button(
+                label: 'Entrar',
+                onTap: (){},
+                type: ButtonType.fill,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Container(
+                height: 58,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: AppTheme.colors.background,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.fromBorderSide(
+                    BorderSide(
+                      color: AppTheme.colors.border,
+                      width: 2,
+                    ),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    'Criar conta',
+                    style: AppTheme.textStyles.buttonBoldTextColor,
+                  ),
+                ),
               ),
             ],
           ),

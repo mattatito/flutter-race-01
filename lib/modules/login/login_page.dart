@@ -43,25 +43,10 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
-                height: 58,
-                width: double.maxFinite,
-                decoration: BoxDecoration(
-                  color: AppTheme.colors.background,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.fromBorderSide(
-                    BorderSide(
-                      color: AppTheme.colors.border,
-                      width: 2,
-                    ),
-                  ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Criar conta',
-                    style: AppTheme.textStyles.buttonBoldTextColor,
-                  ),
-                ),
+              Button(
+                label: 'Criar conta',
+                onTap: (){},
+                type: ButtonType.outline,
               ),
             ],
           ),

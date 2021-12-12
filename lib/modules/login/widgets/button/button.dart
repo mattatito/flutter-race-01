@@ -56,10 +56,7 @@ class Button extends StatelessWidget {
       child: Container(
         height: 58,
         width: double.maxFinite,
-        decoration: BoxDecoration(
-          color: AppTheme.colors.primary,
-          borderRadius: BorderRadius.circular(10),
-        ),
+        decoration: boxDecoration,
         child: Center(
           child: Text(
             label,
